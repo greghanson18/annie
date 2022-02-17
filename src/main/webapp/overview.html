@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AnnieIOT</title>
+
+<!-- *** Load the jQuery and jQueryUI libraries here. *** -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<!-- Load local CSS and JavaScript. -->
+<link rel="stylesheet" href="css/main.css">
+<script src="script/overview.js"></script>
+
+</head>
+<body>
+	<h1>AnnieIOT</h1>
+	<h4>Results overview</h4>
+	<p></p>
+
+
+	<h4 id=passratehead></h4> <!-- blank by default - populate with JS -->
+	<div class="grid-container" id="passgrid">
+		<div class="grid-item" class="scale"><img id="passscale" src="gfx/scale.png"></div>
+		<div class="grid-item"><img id="passarrow" src="gfx/uparrow.png" id="passarrow" name="arrowicon"></div>
+	</div>
+	
+		<h4 id=slowhead></h4> <!-- blank by default - populate with JS -->
+	<div class="grid-container" id="slowgrid">
+		<div class="grid-item" class="scale"><img src="gfx/scalereversed.png"></div>
+		<div class="grid-item"><img id="slowarrow" src="gfx/uparrow.png" id="passarrow" name="arrowicon"></div>
+	</div>
+	
+		<h4 id=fasthead></h4> <!-- blank by default - populate with JS -->
+	<div class="grid-container" id="fastgrid">
+		<div class="grid-item" class="scale"><img src="gfx/scalereversed.png"></div>
+		<div class="grid-item"><img id="fastarrow" src="gfx/uparrow.png" id="passarrow" name="arrowicon"></div>
+	</div>
+	
+		<h4 id=manyhead></h4> <!-- blank by default - populate with JS -->
+	<div class="grid-container" id="manygrid">
+		<div class="grid-item" class="scale"><img src="gfx/scalereversed.png"></div>
+		<div class="grid-item"><img id="manyarrow" src="gfx/uparrow.png" id="passarrow" name="arrowicon"></div>
+	</div>
+	
+		<h4 id=fewhead></h4> <!-- blank by default - populate with JS -->
+	<div class="grid-container" id="fewgrid">
+		<div class="grid-item" class="scale"><img src="gfx/scalereversed.png"></div>
+		<div class="grid-item"><img id="fewarrow" src="gfx/uparrow.png" id="passarrow" name="arrowicon"></div>
+	</div>
+
+
+
+
+	<a href="http://localhost:8080/annie"><button> Return to Homepage </button></a>
+
+
+
+</body>
+</html>

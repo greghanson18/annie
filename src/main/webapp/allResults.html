@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AnnieIOT</title>
+
+<!-- *** Load the jQuery and jQueryUI libraries here. *** -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<!-- Load CSV Library -->
+<script src="script/CSVExport.js"></script>
+
+<!-- Load local CSS and JavaScript. -->
+<link rel="stylesheet" href="css/main.css">
+<script src="script/allResults.js"></script>
+
+</head>
+<body>
+	<h1>AnnieIOT</h1>
+	<h4>All results in database</h4>
+	<h4>Target: 104 Compressions per minute - 576ms between compressions</h4>
+
+	<table id="results">
+		<tr>
+			<th>Student Number</th>
+			<th>Compressions</th>
+			<th>Avg Time Between Compressions(ms)</th>
+			<th>Min Time Between Compressions(ms)</th>
+			<th>Max Time Between Compressions(ms)</th>
+			<th>Student Passed?</th>
+			<th>Feedback</th>
+			<th>Delete Result</th>
+		</tr>
+	</table>
+
+	<button id="download" onclick="downloadResults()"> Download all results (CSV) </button>
+	<a href="http://localhost:8080/annie"><button> Return to Homepage </button></a>
+
+
+
+</body>
+</html>
